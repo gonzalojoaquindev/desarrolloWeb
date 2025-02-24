@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="../styles/style.css" rel="stylesheet">
+  <title>Bars - Bohemika</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="/">
+        <svg class="me-2" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 20v-6M9 20v-4M15 20v-2M6 20v-8M3 20v-4M18 20v-6M21 20v-8M3 4h18M7 8v.01M17 8v.01M11 8v.01" />
+        </svg>
+        <span class="font-display fw-bold">Bohemika</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/pages/bars.html">Bares</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/events.html">Eventos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/contact.html">Contactos</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </div>
+  </nav>
+
+  <main class="pt-navbar">
+    <div class="container py-5">
+      <h1 class="font-display fw-bold mb-4">Descubre los mejores bares de la ciudad</h1>
+
+      <div class="row g-4" id="barsList">
+        <!-- Bars will be inserted here by JavaScript -->
+
+        <!--La Rocca Beach ------------------------------------------------------------>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100">
+            <div class="position-relative">
+              <img
+                src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2c/f2/95/85/disfruta-de-noches-increibles.jpg?w=400&h=400&s=1"
+                alt="Bar La Rocca Beach" class="card-img-top object-cover" style="height: 200px;" />
+              <div class="position-absolute top-0 end-0 mt-2 me-2 bg-dark text-white p-1 rounded">
+                <i class="bi bi-star text-warning"></i>
+                <span>4.8</span>
+              </div>
+            </div>
+
+            <div class="card-body">
+              <h3 class="h5 mb-2 text-primary">La Rocca beach</h3>
+              <p class="text-white-50 mb-3">Somos un restobar, donde los sabores locales, diversión y música se unen,
+                ¡Descubre la alegría de la playa en cada
+                bocado y acorde!.</p>
+              <div class="d-flex align-items-center text-white-50">
+                <i class="bi bi-geo-alt"></i>
+                <span>La Serena</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Tsunami ------------------------------------------------------------>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100">
+            <div class="position-relative">
+              <img
+                src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/d5/d5/26/el-mejor-ambiente-frente.jpg?w=1000&h=-1&s=1"
+                alt="Tsumani Bar " class="card-img-top object-cover" style="height: 200px;" />
+              <div class="position-absolute top-0 end-0 mt-2 me-2 bg-dark text-white p-1 rounded">
+                <i class="bi bi-star text-warning"></i>
+                <span>4.6</span>
+              </div>
+            </div>
+
+            <div class="card-body">
+              <h3 class="h5 mb-2 text-primary">Tsunami Bar</h3>
+              <p class="text-white-50 mb-3">Cuando el atardecer se mezcla con buena música</p>
+              <div class="d-flex align-items-center text-white-50">
+                <i class="bi bi-geo-alt"></i>
+                <span>La Serena</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!---->
+        <!--Ovo Beach------------------------------------------------------------>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100">
+            <div class="position-relative">
+              <img src="https://media-cdn.tripadvisor.com/media/photo-s/12/9b/d2/fc/ovo-beach.jpg" alt="OVO Beach"
+                class="card-img-top object-cover" style="height: 200px;" />
+              <div class="position-absolute top-0 end-0 mt-2 me-2 bg-dark text-white p-1 rounded">
+                <i class="bi bi-star text-warning"></i>
+                <span>4.8</span>
+              </div>
+            </div>
+
+            <div class="card-body">
+              <h3 class="h5 mb-2 text-primary">Ovo beach</h3>
+              <p class="text-white-50 mb-3">El ciclo de fiestas más entretenido de la IV Región</p>
+              <div class="d-flex align-items-center text-white-50">
+                <i class="bi bi-geo-alt"></i>
+                <span>Coquimbo</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!---->
+        <!--Cisternas 2039------------------------------------------------------------>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100">
+            <div class="position-relative">
+              <img src="https://puconadomicilio.cl/wp-content/uploads/Foto-de-bar-cisternas-2039-la-serena.jpg"
+                alt="Bar Cisternas 2039" class="card-img-top object-cover" style="height: 200px;" />
+              <div class="position-absolute top-0 end-0 mt-2 me-2 bg-dark text-white p-1 rounded">
+                <i class="bi bi-star text-warning"></i>
+                <span>4.8</span>
+              </div>
+            </div>
+
+            <div class="card-body">
+              <h3 class="h5 mb-2 text-primary">Bar Cisternas 2039</h3>
+              <p class="text-white-50 mb-3">Un lugar increible para compartir y pasarlo bien.</p>
+              <div class="d-flex align-items-center text-white-50">
+                <i class="bi bi-geo-alt"></i>
+                <span>Coquimbo</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!---->
+        <!--New Pirats------------------------------------------------------------>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100">
+            <div class="position-relative">
+              <img
+                src="https://lh3.googleusercontent.com/gps-cs-s/AB5caB8KRL5TEUB2ZWevzTYxZkqwFXvkfGL9nStjjx2TfOfT0lClraXgmdGf2gNopvi501suXGaSQ1jnGXhdKCJn8FRufUqlW7s29kvG6TFlcAM_od7okGes_NomrFvzHxYQDj0pubpPZw=w532-h240-k-no"
+                alt="Bar Cisternas 2039" class="card-img-top object-cover" style="height: 200px;" />
+              <div class="position-absolute top-0 end-0 mt-2 me-2 bg-dark text-white p-1 rounded">
+                <i class="bi bi-star text-warning"></i>
+                <span>4.5</span>
+              </div>
+            </div>
+
+            <div class="card-body">
+              <h3 class="h5 mb-2 text-primary">New Pirats</h3>
+              <p class="text-white-50 mb-3">Bar, Café, Pub, Chilena</p>
+              <div class="d-flex align-items-center text-white-50">
+                <i class="bi bi-geo-alt"></i>
+                <span>Coquimbo</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!---->
+        <!--Playa Paraiso------------------------------------------------------------>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100">
+            <div class="position-relative">
+              <img
+                src="https://lh3.googleusercontent.com/gps-cs-s/AB5caB84Qe1oKVI9qF0chtJw9a9jRtCfC0P10xJIUvNjZ5nhpww_JmsiA71mfEiP0SyXoa3J4UJo-1YqaNsELePmvz_bzaWSRUomtAdmMsL0ZHBWZUlEZ6m0wUCDv-iUN85a9YZyx5nX=s1360-w1360-h1020"
+                alt="Bar Playa Paraiso" class="card-img-top object-cover" style="height: 200px;" />
+              <div class="position-absolute top-0 end-0 mt-2 me-2 bg-dark text-white p-1 rounded">
+                <i class="bi bi-star text-warning"></i>
+                <span>4.2</span>
+              </div>
+            </div>
+
+            <div class="card-body">
+              <h3 class="h5 mb-2 text-primary">Playa Paraiso</h3>
+              <p class="text-white-50 mb-3">Bar, Café, Pub, Chilena</p>
+              <div class="d-flex align-items-center text-white-50">
+                <i class="bi bi-geo-alt"></i>
+                <span>La Serena</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!---->
+      </div>
+    </div>
+  </main>
+  <footer class="bg-dark text-white py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h5 class="fw-bold">Bohemika</h5>
+          <p>Descubre los mejores bares y eventos en La Serena. ¡La bohemia te espera!</p>
+        </div>
+
+      </div>
+      <hr class="border-top border-white">
+      <div class="text-center">
+        <p>&copy; 2025 Bohemika. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

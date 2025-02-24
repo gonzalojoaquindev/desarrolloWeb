@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto - Bohemika</title>
+  <link rel="icon" type="image/svg+xml" href="/assets/bohemika.svg" />
+  <!-- Bootstrap CSS desde CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="../styles/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="/">
+        <svg class="me-2" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 20v-6M9 20v-4M15 20v-2M6 20v-8M3 20v-4M18 20v-6M21 20v-8M3 4h18M7 8v.01M17 8v.01M11 8v.01" />
+        </svg>
+        <span class="font-display fw-bold">Bohemika</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/bars.html">Bares</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/events.html">Eventos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  active" href="/pages/contact.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </div>
+  </nav>
+
+  <main class="pt-navbar">
+    <div class="container py-5">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+          <h1 class="font-display fw-bold mb-3">Contáctanos</h1>
+          <p class="text-white-50 mb-4">
+            ¿Tiene preguntas o sugerencias? Nos encantaría saber de usted. Envíanos un mensaje y te responderemos tan
+            pronto como
+            posible.
+          </p>
+
+          <div class="card">
+            <div class="card-body p-4">
+              <form id="contactForm">
+                <div class="mb-3 text-white">
+                  <label for="name" class="form-label">Nombre</label>
+                  <input type="text" class="form-control" id="name" placeholder="Juan Perez" required />
+                </div>
+
+                <div class="mb-3 text-white">
+                  <label for="email" class="form-label">Email</label>
+                  <div class="input-group">
+                    <span class="input-group-text bg-dark-lighter border-0 text-white">
+                      <i class="bi bi-envelope"></i>
+                    </span>
+                    <input type="email" class="form-control" id="email" placeholder="your@email.com" required />
+                  </div>
+                </div>
+
+                <div class="mb-4 text-white">
+                  <label for="message" class="form-label">Mensaje</label>
+                  <div class="input-group">
+                    <span class="input-group-text bg-dark-lighter border-0 text-white">
+                      <i class="bi bi-chat-left"></i>
+                    </span>
+                    <textarea class="form-control" id="message" rows="5" placeholder="Tu mensaje aquí"
+                      required></textarea>
+                  </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100 d-flex align-items-center justify-content-center">
+                  <svg class="me-2" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2">
+                    <line x1="22" y1="2" x2="11" y2="13" />
+                    <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                  </svg>
+                  Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="bg-dark text-white py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h5 class="fw-bold">Bohemika</h5>
+          <p>Descubre los mejores bares y eventos en La Serena. ¡La bohemia te espera!</p>
+        </div>
+
+      </div>
+      <hr class="border-top border-white">
+      <div class="text-center">
+        <p>&copy; 2025 Bohemika. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

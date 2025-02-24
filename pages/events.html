@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Events - Bohemika</title>
+  <link rel="icon" type="image/svg+xml" href="/assets/bohemika.svg" />
+  <!-- Bootstrap CSS desde CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="../styles/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="/">
+        <svg class="me-2" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 20v-6M9 20v-4M15 20v-2M6 20v-8M3 20v-4M18 20v-6M21 20v-8M3 4h18M7 8v.01M17 8v.01M11 8v.01" />
+        </svg>
+        <span class="font-display fw-bold">Bohemika</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/bars.html">Bares</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  active" href="/pages/events.html">Eventos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/contact.html">Contactos</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </div>
+  </nav>
+
+  <main class="pt-navbar">
+    <div class="container py-5">
+      <h1 class="font-display fw-bold mb-4">Próximos eventos</h1>
+
+      <div class="row g-4" id="eventsList">
+        <!-- Claudio Narea en Enjoy-->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100">
+            <img
+              src="https://static.enjoy.cl//bibliotecamedios//espectaculos//img_espectaculos_landing_1673_20250128_164314.png"
+              alt="Evento Claudio Narea en Enjoy Coquimbo" class="card-img-top img-hover object-cover"
+              style="height: 200px;" />
+
+            <div class="card-body">
+              <h3 class="h5 mb-2 text-primary">Show Claudio Narea</h3>
+              <p class="text-white-50 mb-4">¡Ven a vivir la experiencia Que Vuelvan los 90s con Claudio Narea!'</p>
+
+              <div class="d-flex flex-column gap-2 text-white-50">
+                <div class="d-flex align-items-center ">
+                  <i class="bi bi-geo-alt text-primary me-2"></i>
+                  <span>Casino Enjoy Coquimbo</span>
+                </div>
+                <div class="d-flex align-items-center">
+                  <i class="bi bi-calendar text-primary me-2"></i>
+                  <span>21 de Febrero de 2025</span>
+                </div>
+                <div class="d-flex align-items-center ml-2">
+                  <i class="bi bi-clock text-primary me-2"></i>
+                  <span>22:00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!---->
+        <!-- Claudio Narea en Enjoy-->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100">
+            <img
+              src="https://ticketing-uploads-1.ticketplus.global/images/shares/701875605eef459d5f09-Los_Cafres_COQUIMBO_1200x630.jpg?1732191462"
+              alt="Evento Los Cafres en Enjoy Coquimbo" class="card-img-top img-hover object-cover"
+              style="height: 200px;" />
+
+            <div class="card-body">
+              <h3 class="h5 mb-2 text-primary">Los Cafres</h3>
+              <p class="text-white-50 mb-4">Cocierto de los Cafres en Coquimbo, Gira Chile 2025</p>
+
+              <div class="d-flex flex-column gap-2 text-white-50">
+                <div class="d-flex align-items-center ">
+                  <i class="bi bi-geo-alt text-primary me-2"></i>
+                  <span>Casino Enjoy Coquimbo</span>
+                </div>
+                <div class="d-flex align-items-center">
+                  <i class="bi bi-calendar text-primary me-2"></i>
+                  <span>06 de Marzo de 2025</span>
+                </div>
+                <div class="d-flex align-items-center ml-2">
+                  <i class="bi bi-clock text-primary me-2"></i>
+                  <span>21:00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!---->
+      </div>
+    </div>
+  </main>
+  <footer class="bg-dark text-white py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h5 class="fw-bold">Bohemika</h5>
+          <p>Descubre los mejores bares y eventos en La Serena. ¡La bohemia te espera!</p>
+        </div>
+
+      </div>
+      <hr class="border-top border-white">
+      <div class="text-center">
+        <p>&copy; 2025 Bohemika. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

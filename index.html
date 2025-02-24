@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Bootstrap CSS desde CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="styles/style.css" rel="stylesheet">
+  <title>Bohemika - Descubre bares únicos</title>
+  <link rel="icon" type="image/svg+xml" href="/assets/bohemika.svg" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="/">
+        <svg class="me-2" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 20v-6M9 20v-4M15 20v-2M6 20v-8M3 20v-4M18 20v-6M21 20v-8M3 4h18M7 8v.01M17 8v.01M11 8v.01" />
+        </svg>
+        <span class="font-display fw-bold">Bohemika</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon text-primary"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/bars.html">Bares</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/events.html">Eventos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/contact.html">Contactos</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Sección Hero -->
+    <div class="hero"
+      style="background-image: url('https://images.unsplash.com/photo-1566417713940-fe7c737a9ef2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')">
+      <div class="hero-overlay">
+        <div class="container h-100">
+          <div class="row h-100 align-items-center text-center">
+            <div class="col-12">
+              <h1 class="display-4 font-display fw-bold mb-4">
+                Descubre la mejor bohemia en
+                <span class="text-primary">La Serena</span>
+              </h1>
+              <p class="lead mb-5">
+                Explora los bares más únicos de tu ciudad y disfruta de una experiencia inolvidable.
+              </p>
+
+              <div class="col-md-8 col-lg-6 mx-auto">
+                <div class="input-group">
+                  <input type="text" class="form-control form-control-lg" placeholder="La Serena" />
+                  <button class="btn btn-primary" type="button">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <circle cx="11" cy="11" r="8" />
+                      <path d="m21 21-4.3-4.3" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sección de bares destacados -->
+    <section class="py-5">
+      <div class="container">
+        <h2 class="font-display fw-bold mb-4">Bares destacados</h2>
+
+        <div class="row g-4" id="featuredBars">
+
+          <!--La Rocca Brach ------------------------------------------------------------>
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+              <div class="position-relative">
+                <img
+                  src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2c/f2/95/85/disfruta-de-noches-increibles.jpg?w=400&h=400&s=1"
+                  alt="Bar La Rocca Beach" class="card-img-top object-cover" style="height: 200px;" />
+                <div class="position-absolute top-0 end-0 mt-2 me-2 bg-dark text-white p-1 rounded">
+                  <i class="bi bi-star text-warning"></i>
+                  <span>4.8</span>
+                </div>
+              </div>
+
+              <div class="card-body">
+                <h3 class="h5 mb-2 text-primary">La Rocca beach</h3>
+                <p class="text-white-50 mb-3">Somos un restobar, donde los sabores locales, diversión y música se unen,
+                  ¡Descubre la alegría de la playa en cada
+                  bocado y acorde!.</p>
+                <div class="d-flex align-items-center text-white-50">
+                  <i class="bi bi-geo-alt"></i>
+                  <span>La Serena</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!---->
+
+          <!--El Muelle ------------------------------------------------------------>
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+              <div class="position-relative">
+                <img
+                  src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/12/ad/00/el-muelle-pub.jpg?w=1000&h=-1&s=1"
+                  alt="Bar Tsunami" class="card-img-top object-cover" style="height: 200px;" />
+                <div class="position-absolute top-0 end-0 mt-2 me-2 bg-dark text-white p-1 rounded">
+                  <i class="bi bi-star text-warning"></i>
+                  <span>4.5</span>
+                </div>
+              </div>
+
+              <div class="card-body">
+                <h3 class="h5 mb-2 text-primary">El Muelle Bar</h3>
+                <p class="text-white-50 mb-3">Live Music! Best Cocktails/pizzas, just at the beach! Tsunami Bar Is Your
+                  Beach House, In La Serena, Chile</p>
+                <div class="d-flex align-items-center text-white-50">
+                  <i class="bi bi-geo-alt"></i>
+                  <span>La Serena</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!---->
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-dark text-white py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h5 class="fw-bold">Bohemika</h5>
+          <p>Descubre los mejores bares y eventos en La Serena. ¡La bohemia te espera!</p>
+        </div>
+
+      </div>
+      <hr class="border-top border-white">
+      <div class="text-center">
+        <p>&copy; 2025 Bohemika. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

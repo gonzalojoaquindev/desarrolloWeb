@@ -1,0 +1,157 @@
+/* Custom fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+:root {
+  --primary: #FFBF00;
+  --primary-light: #FFD54F;
+  --primary-dark: #CC9900;
+  --dark: #141414;
+  --dark-lighter: #1F1F1F;
+  --dark-card: #2A2A2A;
+}
+
+/* Estilos generales */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--dark);
+  color: white;
+}
+
+.font-display {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Custom background colors */
+.bg-dark {
+  background-color: var(--dark) !important;
+}
+
+.bg-dark-lighter {
+  background-color: var(--dark-lighter) !important;
+}
+
+.bg-dark-card {
+  background-color: var(--dark-card) !important;
+}
+
+/* Text colors */
+.text-primary {
+  color: var(--primary) !important;
+}
+
+.text-primary-light {
+  color: var(--primary-light) !important;
+}
+
+/* Custom button styles */
+.btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: var(--dark);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-light);
+  border-color: var(--primary-light);
+  color: var(--dark);
+}
+
+/* Navigation styles */
+.navbar {
+  background-color: rgba(20, 20, 20, 0.95);
+  backdrop-filter: blur(4px);
+}
+
+.navbar-brand {
+  color: var(--primary);
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.7);
+  transition: color 0.2s;
+}
+
+.nav-link:hover {
+  color: var(--primary);
+}
+
+.nav-link.active {
+  color: var(--primary) !important;
+}
+
+/* Card styles */
+.card {
+  background-color: var(--dark-card);
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos del formulario */
+.form-control {
+  background-color: var(--dark-lighter);
+  border-color: #404040;
+  color: white;
+}
+
+.form-control:focus {
+  background-color: var(--dark-lighter);
+  border-color: var(--primary);
+  color: white;
+  box-shadow: 0 0 0 0.25rem rgba(255, 191, 0, 0.25);
+}
+
+.form-control::placeholder {
+  color: #808080;
+}
+
+/* Sección hero */
+.hero {
+  position: relative;
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to top, var(--dark), rgba(20, 20, 20, 0.7), transparent);
+}
+
+/* Calificación */
+.rating-badge {
+  background-color: rgba(42, 42, 42, 0.9);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+}
+
+/* Efectos de imagenes */
+.img-hover {
+  transition: transform 0.3s ease;
+}
+
+.card:hover .img-hover {
+  transform: scale(1.05);
+}
+
+.object-cover {
+  object-fit: cover;
+}
+
+.backdrop-blur {
+  backdrop-filter: blur(4px);
+}
+
+/* Espaciado */
+.pt-navbar {
+  padding-top: 4rem;
+}
