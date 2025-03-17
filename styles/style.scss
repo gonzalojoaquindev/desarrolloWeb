@@ -108,6 +108,59 @@ body {
     }
 }
 
+// Barra de búsqueda (search-bar)
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $dark-card;
+    /* Fondo semi-transparente */
+    border-radius: $border-radius;
+    padding: 10px;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+
+    input {
+        background-color: $dark-lighter;
+        border: 2px solid $primary;
+        color: $white;
+        padding: 10px 15px;
+        border-radius: $border-radius;
+        flex: 1;
+        font-size: 1rem;
+
+        &::placeholder {
+            color: #b0b0b0;
+        }
+
+        &:focus {
+            border-color: $primary-light;
+            box-shadow: 0 0 0 0.2rem rgba($primary, 0.25);
+        }
+    }
+
+    button {
+        background-color: $primary;
+        border: none;
+        color: $dark;
+        padding: 10px;
+        border-radius: $border-radius;
+        cursor: pointer;
+        margin-left: 10px;
+
+        svg {
+            fill: $dark;
+            width: 24px;
+            height: 24px;
+        }
+
+        &:hover {
+            background-color: $primary-light;
+        }
+    }
+}
+
 // Estilos de formulario
 .form-control {
     background-color: $dark-lighter;
@@ -143,7 +196,7 @@ body {
     }
 }
 
-// Calificación (rating badge)
+// Calificación
 .rating-badge {
     background-color: rgba(42, 42, 42, 0.9);
     color: $white;
@@ -270,7 +323,7 @@ footer {
     }
 }
 
-// Media Queries para pantallas pequeñas
+// Media Queries 
 @media (max-width: 768px) {
     .hero {
         height: 50vh;
@@ -282,5 +335,25 @@ footer {
 
     .bar-info {
         padding: 15px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .hero {
+        height: 60vh;
+    }
+
+    .bars-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .hero {
+        height: 40vh;
+    }
+
+    .bars-grid {
+        grid-template-columns: 1fr;
     }
 }
