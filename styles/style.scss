@@ -1,0 +1,286 @@
+// Importación de fuentes
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+// Variables de color
+$primary: #FFBF00;
+$primary-light: #FFD54F;
+$primary-dark: #CC9900;
+$dark: #141414;
+$dark-lighter: #1F1F1F;
+$dark-card: #2A2A2A;
+$white: #fff;
+$transition-speed: 0.3s;
+$border-radius: 8px;
+
+// Variables de fuente
+$font-family-default: 'Inter', sans-serif;
+$font-family-display: 'Playfair Display', serif;
+
+// Mixins
+@mixin transition($property, $speed) {
+    transition: $property $speed ease-in-out;
+}
+
+@mixin transform($scale) {
+    transform: scale($scale);
+    @include transition(all, $transition-speed);
+}
+
+// Estilos generales
+body {
+    font-family: $font-family-default;
+    background-color: $dark;
+    color: $white;
+}
+
+.font-display {
+    font-family: $font-family-display;
+}
+
+// Colores de fondo personalizados
+.bg-dark {
+    background-color: $dark !important;
+}
+
+.bg-dark-lighter {
+    background-color: $dark-lighter !important;
+}
+
+.bg-dark-card {
+    background-color: $dark-card !important;
+}
+
+// Colores de texto personalizados
+.text-primary {
+    color: $primary !important;
+}
+
+.text-primary-light {
+    color: $primary-light !important;
+}
+
+// Estilos de botones personalizados
+.btn-primary {
+    background-color: $primary;
+    border-color: $primary;
+    color: $dark;
+    @include transition(background-color, $transition-speed);
+}
+
+.btn-primary:hover {
+    background-color: $primary-light;
+    border-color: $primary-light;
+    color: $dark;
+}
+
+// Navegación
+.navbar {
+    background-color: rgba(20, 20, 20, 0.95);
+    backdrop-filter: blur(4px);
+}
+
+.navbar-brand {
+    color: $primary;
+}
+
+.nav-link {
+    color: rgba($white, 0.7);
+    @include transition(color, $transition-speed);
+
+    &:hover {
+        color: $primary;
+    }
+
+    &.active {
+        color: $primary !important;
+    }
+}
+
+// Estilos de tarjetas
+.card {
+    background-color: $dark-card;
+    border: none;
+    @include transition(all, $transition-speed);
+
+    &:hover {
+        @include transform(1.05);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    }
+}
+
+// Estilos de formulario
+.form-control {
+    background-color: $dark-lighter;
+    border-color: #404040;
+    color: $white;
+
+    &:focus {
+        background-color: $dark-lighter;
+        border-color: $primary;
+        color: $white;
+        box-shadow: 0 0 0 0.25rem rgba($primary, 0.25);
+    }
+
+    &::placeholder {
+        color: #808080;
+    }
+}
+
+// Hero Section
+.hero {
+    position: relative;
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+
+    .hero-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(to top, $dark, rgba(20, 20, 20, 0.7), transparent);
+    }
+}
+
+// Calificación (rating badge)
+.rating-badge {
+    background-color: rgba(42, 42, 42, 0.9);
+    color: $white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+}
+
+// Efectos de imágenes (hover)
+.img-hover {
+    @include transition(transform, $transition-speed);
+}
+
+.card:hover .img-hover {
+    transform: scale(1.05);
+}
+
+.object-cover {
+    object-fit: cover;
+}
+
+.backdrop-blur {
+    backdrop-filter: blur(4px);
+}
+
+// Espaciado de la navbar
+.pt-navbar {
+    padding-top: 4rem;
+}
+
+// Sección de Bares Destacados
+.bars-section {
+    padding: 60px 0;
+}
+
+.bars-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+
+    .bar-item {
+        background-color: $dark-card;
+        border-radius: $border-radius;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        @include transform(1);
+        @include transition(all, $transition-speed);
+
+        &:hover {
+            @include transform(1.05);
+        }
+
+        .bar-img {
+            width: 100%;
+            height: 200px;
+            position: relative;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                @include transition(all, $transition-speed);
+            }
+
+            .rating {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                background-color: rgba(0, 0, 0, 0.7);
+                padding: 5px;
+                border-radius: 5px;
+                color: $white;
+            }
+        }
+
+        .bar-info {
+            padding: 20px;
+
+            .bar-title {
+                color: $primary;
+                margin-bottom: 10px;
+                font-size: 1.2rem;
+                @include transition(color, $transition-speed);
+
+                &:hover {
+                    color: darken($primary, 10%);
+                }
+            }
+
+            .bar-location {
+                display: flex;
+                align-items: center;
+                color: $dark-lighter;
+                font-size: 0.9rem;
+
+                i {
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+}
+
+// Footer
+footer {
+    background-color: $dark;
+    color: $white;
+    padding: 40px 0;
+
+    .footer-content {
+        text-align: center;
+    }
+
+    .footer-bottom {
+        hr {
+            border: 1px solid $white;
+        }
+
+        .text-center {
+            p {
+                font-size: 0.9rem;
+            }
+        }
+    }
+}
+
+// Media Queries para pantallas pequeñas
+@media (max-width: 768px) {
+    .hero {
+        height: 50vh;
+    }
+
+    .bars-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .bar-info {
+        padding: 15px;
+    }
+}
