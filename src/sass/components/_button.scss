@@ -1,0 +1,13 @@
+// Estilos de botones personalizados
+.btn-primary {
+    background-color: $primary;
+    border-color: $primary;
+    color: $dark;
+    @include transition(background-color, $transition-speed);
+}
+
+.btn-primary:hover {
+    background-color: $primary-light;
+    border-color: $primary-light;
+    color: $dark;
+}

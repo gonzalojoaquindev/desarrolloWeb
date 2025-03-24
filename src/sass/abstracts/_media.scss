@@ -1,0 +1,34 @@
+// Media Queries 
+@media (max-width: 768px) {
+    .hero {
+        height: 50vh;
+    }
+
+    .bars-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .bar-info {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .hero {
+        height: 60vh;
+    }
+
+    .bars-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .hero {
+        height: 40vh;
+    }
+
+    .bars-grid {
+        grid-template-columns: 1fr;
+    }
+}

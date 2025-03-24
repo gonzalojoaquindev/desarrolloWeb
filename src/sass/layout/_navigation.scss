@@ -1,0 +1,22 @@
+// Navegación
+.navbar {
+    background-color: rgba(20, 20, 20, 0.95);
+    backdrop-filter: blur(4px);
+}
+
+.navbar-brand {
+    color: $primary;
+}
+
+.nav-link {
+    color: rgba($white, 0.7);
+    @include transition(color, $transition-speed);
+
+    &:hover {
+        color: $primary;
+    }
+
+    &.active {
+        color: $primary !important;
+    }
+}

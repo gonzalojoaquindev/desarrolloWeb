@@ -1,0 +1,16 @@
+// Hero Section
+.hero {
+    position: relative;
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+
+    .hero-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(to top, $dark, rgba(20, 20, 20, 0.7), transparent);
+    }
+}

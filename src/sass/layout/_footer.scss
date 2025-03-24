@@ -1,0 +1,22 @@
+// Footer
+footer {
+    background-color: $dark;
+    color: $white;
+    padding: 40px 0;
+
+    .footer-content {
+        text-align: center;
+    }
+
+    .footer-bottom {
+        hr {
+            border: 1px solid $white;
+        }
+
+        .text-center {
+            p {
+                font-size: 0.9rem;
+            }
+        }
+    }
+}

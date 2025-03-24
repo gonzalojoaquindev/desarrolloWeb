@@ -1,0 +1,9 @@
+// Mixins
+@mixin transition($property, $speed) {
+    transition: $property $speed ease-in-out;
+}
+
+@mixin transform($scale) {
+    transform: scale($scale);
+    @include transition(all, $transition-speed);
+}
