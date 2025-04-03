@@ -9,3 +9,25 @@
         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
     }
 }
+
+// Efectos de imágenes (hover)
+.img-hover {
+    @include transition(transform, $transition-speed);
+}
+
+.card:hover .img-hover {
+    transform: scale(1.05);
+}
+
+.object-cover {
+    object-fit: cover;
+}
+
+.backdrop-blur {
+    backdrop-filter: blur(4px);
+}
+
+// Espaciado de la navbar
+.pt-navbar {
+    padding-top: 4rem;
+}

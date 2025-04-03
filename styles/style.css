@@ -1,4 +1,34 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap");
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #141414;
+  color: #fff;
+}
+
+.font-display {
+  font-family: "Playfair Display", serif;
+}
+
+.bg-dark {
+  background-color: #141414 !important;
+}
+
+.bg-dark-lighter {
+  background-color: #1F1F1F !important;
+}
+
+.bg-dark-card {
+  background-color: #2A2A2A !important;
+}
+
+.text-primary {
+  color: #FFBF00 !important;
+}
+
+.text-primary-light {
+  color: #FFD54F !important;
+}
+
 @media (max-width: 768px) {
   .hero {
     height: 50vh;
@@ -109,6 +139,39 @@
   transform: scale(1.05);
   transition: all 0.3s ease-in-out;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.img-hover {
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover .img-hover {
+  transform: scale(1.05);
+}
+
+.object-cover {
+  object-fit: cover;
+}
+
+.backdrop-blur {
+  backdrop-filter: blur(4px);
+}
+
+.pt-navbar {
+  padding-top: 4rem;
+}
+
+.comment {
+  background-color: #2A2A2A;
+  border: none;
+  color: #fff;
+}
+
+.rating-badge {
+  background-color: rgba(42, 42, 42, 0.9);
+  color: #fff;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
 }
 
 footer {
@@ -224,63 +287,6 @@ footer .footer-bottom .text-center p {
   right: 0;
   bottom: 0;
   background: linear-gradient(to top, #141414, rgba(20, 20, 20, 0.7), transparent);
-}
-
-body {
-  font-family: "Inter", sans-serif;
-  background-color: #141414;
-  color: #fff;
-}
-
-.font-display {
-  font-family: "Playfair Display", serif;
-}
-
-.bg-dark {
-  background-color: #141414 !important;
-}
-
-.bg-dark-lighter {
-  background-color: #1F1F1F !important;
-}
-
-.bg-dark-card {
-  background-color: #2A2A2A !important;
-}
-
-.text-primary {
-  color: #FFBF00 !important;
-}
-
-.text-primary-light {
-  color: #FFD54F !important;
-}
-
-.rating-badge {
-  background-color: rgba(42, 42, 42, 0.9);
-  color: #fff;
-  padding: 0.25rem 0.75rem;
-  border-radius: 9999px;
-}
-
-.img-hover {
-  transition: transform 0.3s ease-in-out;
-}
-
-.card:hover .img-hover {
-  transform: scale(1.05);
-}
-
-.object-cover {
-  object-fit: cover;
-}
-
-.backdrop-blur {
-  backdrop-filter: blur(4px);
-}
-
-.pt-navbar {
-  padding-top: 4rem;
 }
 
 /*# sourceMappingURL=style.css.map */

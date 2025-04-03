@@ -12,3 +12,36 @@ $border-radius: 8px;
 // Variables de fuente
 $font-family-default: 'Inter', sans-serif;
 $font-family-display: 'Playfair Display', serif;
+
+// Estilos generales
+body {
+    font-family: $font-family-default;
+    background-color: $dark;
+    color: $white;
+}
+
+.font-display {
+    font-family: $font-family-display;
+}
+
+// Colores de fondo personalizados
+.bg-dark {
+    background-color: $dark !important;
+}
+
+.bg-dark-lighter {
+    background-color: $dark-lighter !important;
+}
+
+.bg-dark-card {
+    background-color: $dark-card !important;
+}
+
+// Colores de texto personalizados
+.text-primary {
+    color: $primary !important;
+}
+
+.text-primary-light {
+    color: $primary-light !important;
+}
